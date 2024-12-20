@@ -7,40 +7,41 @@ import ListItemText from '@mui/material/ListItemText';
 
 
 // eslint-disable-next-line react/prop-types
-const Links = ({title}) => {
-    return (
-        <Box 
-        //className="border"
-         sx={{
-            ":hover .show-when-hover": {
-                display: "block"
-            },
-            ":hover": {
-                cursor: "pointer"
-            },
-            position: "relative",
-            display: "flex",
-            alignItems: "center"
-        }}>
-            <Typography variant='body1'>
-                {title}
+const Links = ({ title }) => {
+  return (
+    <Box
+      //className="border"
+      sx={{
+        ":hover .show-when-hover": {
+          display: "block"
+        },
+        ":hover": {
+          cursor: "pointer"
+        },
+        position: "relative",
+        display: "flex",
+        alignItems: "center"
+      }}>
+      <Typography variant='body1'>
+        {title}
 
-            </Typography>
-            <ExpandMore sx={{ fontSize: "16px", ml: 1 }} />
+      </Typography>
+      <ExpandMore sx={{ fontSize: "16px", ml: 1 }} />
 
-            <Box
-             className= " show-when-hover"
-                    sx={{
-                        position: "absolute",
-                        top: "100%",
-                        minWidth: 170,
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        display: "none",
-                        
-                    }}
-                    >
-                <Paper sx={{ mt: 2 }} className=" ">
+      <Box
+        className=" show-when-hover"
+        sx={{
+          position: "absolute",
+          top: "100%",
+          minWidth: 170,
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "none",
+          zIndex: 2
+
+        }}
+      >
+        <Paper sx={{ mt: 2 , }} className=" ">
           <nav aria-label="secondary mailbox folders">
 
             <List>
@@ -65,7 +66,7 @@ const Links = ({title}) => {
                 </ListItemButton>
               </ListItem>
 
-              <ListItem 
+              <ListItem
                 sx={{
                   ":hover .sub-link": { display: "block" },
                   position: "relative",
