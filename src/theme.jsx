@@ -1,4 +1,3 @@
-import React from "react";
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
 import { grey } from "@mui/material/colors";
@@ -12,6 +11,12 @@ export const getDesignTokens = (mode) => ({
           myColor: {
             main: "#F6F9FC"
           },
+
+
+          bg: {
+            main: "#F6F6F6"
+          },
+
 
 
           text: {
@@ -29,6 +34,9 @@ export const getDesignTokens = (mode) => ({
           // palette values for dark mode
           myColor: {
             main: "#252b32"
+          },
+          bg: {
+            main : "#1D2021",
           },
 
           neutral: {
